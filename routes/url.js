@@ -3,10 +3,10 @@ import { handleCreateShorterUrlId, handleRedirectUrl, handleUrlAnalytics } from 
 
 const route = express.Router();
 
-route.post('/', handleCreateShorterUrlId)
+route.post('/', handleCreateShorterUrlId);
 
-route.get('/:shortId', handleRedirectUrl)
+route.get('/:shortId', handleRedirectUrl);
 
-route.get('/analytics/:shortId', handleUrlAnalytics)
+route.get('/analytics/:shortId', handleUrlAnalytics);
 
 export default route
